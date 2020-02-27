@@ -10,43 +10,51 @@
 <body>
     <h1>Register</h1>
     <form>
-        <label for="first">First Name:</label>
-        <input id="first" name="first" type="text" placeholder="John" required>
-        <label for="last">Last Name:</label>
-        <input id="last" name="first" type="text" placeholder="Smith" required>
-        <br>
-        <label for="male">Male</label>
-        <input id="male" name="gender" type="radio" value="Male" required>
-        <label for="female">Female</label>
-        <input id="female" name="gender" type="radio" value="Female" required>
-        <label for="other">Other</label>
-        <input id="other" name="gender" type="radio" value="Other" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="5" maxLength="10" required>
-        <br>
-        Birthday:
-        <select name="month">
-            <option value="Jan" required>January</option>
-            <option value="Feb" required>February</option>
-            <option value="Mar" required>March</option>
-        </select>
-        <select name="day">
-            <option value="1" required>1</option>
-            <option value="2" required>2</option>
-            <option value="3" required>3</option>
-        </select>
-        <select name="year">
-            <option value="2020" required>2020</option>
-            <option value="2010" required>2010</option>
-            <option value="2000" required>2000</option>
-        </select>
-        <br>
-        <label for="terms">I agree to the terms and conditions</label>
-        <input id="terms" name="terms" type="checkbox" required>
-        <br>
+        <div>
+            <label for="first">First Name:</label>
+            <input id="first" name="first" type="text" placeholder="John" required>
+            <label for="last">Last Name:</label>
+            <input id="last" name="first" type="text" placeholder="Smith" required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input id="male" name="gender" type="radio" value="Male" required>
+            <label for="female">Female</label>
+            <input id="female" name="gender" type="radio" value="Female" required>
+            <label for="other">Other</label>
+            <input id="other" name="gender" type="radio" value="Other" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern=".{5,10}" title="5 to 10 characters" required>
+        </div>
+        <div>
+            Birthday:
+            <select name="month">
+                <option value="Month" required>Month</option>
+                <option value="Jan" required>January</option>
+                <option value="Feb" required>February</option>
+                <option value="Mar" required>March</option>
+            </select>
+            <select name="day">
+                <option value="Day" required>Day</option>
+                <option value="1" required>1</option>
+                <option value="2" required>2</option>
+                <option value="3" required>3</option>
+            </select>
+            <select name="year">
+                <option value="Year" required>Year</option>
+                <option value="2020" required>2020</option>
+                <option value="2010" required>2010</option>
+                <option value="2000" required>2000</option>
+            </select>
+        </div>
+        <div>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input id="terms" name="terms" type="checkbox" required>
+        </div>
         <input type="submit">
     </form>
 </body>
